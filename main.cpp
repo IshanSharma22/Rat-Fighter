@@ -1,12 +1,5 @@
 // rats.cpp
 
-// Portions you are to complete are marked with a TODO: comment.
-// We've provided some incorrect return statements (so indicated) just
-// to allow this skeleton program to compile and run, albeit incorrectly.
-// The first thing you probably want to do is implement the utterly trivial
-// functions (marked TRIVIAL).  Then get Arena::display going.  That gives
-// you more flexibility in the order you tackle the rest of the functionality.
-// As you finish implementing each TODO: item, remove its TODO: comment.
 
 #include <iostream>
 #include <string>
@@ -796,9 +789,7 @@ bool recommendMove(const Arena& a, int r, int c, int& bestDir)
     // TODO:  Implement this function
     // Delete the following line and replace it with your code.
     
-    // Your replacement implementation should do something intelligent.
-    // You don't have to be any smarter than the following, although
-    // you can if you want to be:  If staying put runs the risk of a
+  //If staying put runs the risk of a
     // rat possibly moving onto the player's location when the rats
     // move, yet moving in a particular direction puts the player in a
     // position that is safe when the rats move, then the chosen
@@ -810,10 +801,7 @@ bool recommendMove(const Arena& a, int r, int c, int& bestDir)
     // by many rats is more dangerous than one that may be moved to by
     // few.
     //
-    // Unless you want to, you do not have to take into account that a
-    // rat might be poisoned and thus sometimes less dangerous than one
-    // that is not.  That requires a more sophisticated analysis that
-    // we're not asking you to do.
+
     int b_dir = 100;
     
     int d_stay=0;
@@ -894,13 +882,7 @@ int numOfDangerousRats(const Arena& a, int r, int c){
 //  clearScreen implementation
 ///////////////////////////////////////////////////////////////////////////
 
-// DO NOT MODIFY OR REMOVE ANY CODE BETWEEN HERE AND THE END OF THE FILE!!!
-// THE CODE IS SUITABLE FOR VISUAL C++, XCODE, AND g++ UNDER LINUX.
 
-// Note to Xcode users:  clearScreen() will just write a newline instead
-// of clearing the window if you launch your program from within Xcode.
-// That's acceptable.  (The Xcode output window doesn't have the capability
-// of being cleared.)
 
 #ifdef _MSC_VER  //  Microsoft Visual C++
 
